@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/my-style.css">
+    <title>Mine Sweeper</title>
+</head>
+
+<body onload="init()">
+    <h1> Mine Sweeper</h1>
+  
+    <h3>
+        <ul>
+            <li>
+                Timer: <span class="timer">0</span> sec
+            </li>
+            <li>Score: <span class="score">0</span></li>
+            <li class="level">Beginner Mode</li>
+        </ul>
+    </h3>
+    <h3>
+        <ul>
+            <li>Total Mines On Board: <span class="mines-count">2</span></li>
+            <li>Flags Count: <span class="flags-count">0</span></li>
+        </ul>
+<!-- To do - Change hints dynamically according to level mode -->
+        <div><button onclick="openChooseLevelBox(this)" class="level-box">Choose Level</button>
+            <ul class="hints hide">
+                <li class="hints-count"><strong>Hints Left: </strong><span>3</span></li>
+                <li class="hint1" onclick="showHint()">&#128161</li>
+                <li class="hint2" onclick="showHint()">&#128161 </li>
+                <li class="hint3" onclick="showHint()">&#128161</li>
+            </ul>
+        </div>
+    </h3>
+    <div class="board-container"></div>
+    <img onclick="restart()" src="img/playing-smiley.png" alt="playing-smiley img" class="smiley">
+    <div class="game-instructions">
+        <h2>Game Instructions</h2>
+        <button class="show-hide-btn" onclick="toggleIntsr()">Hide</button>
+        <div class="instructions-text">
+            <h3>The Target</h3> 
+            <p>To find all mines on board and save the planet</p>
+            <h3>How to play</h3>
+            <div class="instructions-list">
+                <li>Click the smiley to restart</li>
+                <li>Left click on mouse to reveal a cell</li>
+                <li>Right click on mouse to mark a suspicious cell</li>
+                <li>Use the hints to temporarily reveal cells</li>
+            </div>
+            <h4>You win when all mines are flagged</h4>
+        </div>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

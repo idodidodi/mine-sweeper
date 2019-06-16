@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    background-color: rgb(226, 212, 197);
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.level-box {
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.hints {
+   /* margin-bottom: 2%; */
+   position: relative;
+   left: -2.7%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hints li:nth-child(n+2) {
+    cursor: help;
+}
+/* 
+.hints-count {
+    cursor: n;
+} */
+ul > li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+   }
+   
+
+.board-container {
+    background-color: antiquewhite;
+    margin: auto;
+    box-shadow: 5px 5px;
+    width: 350px;
+    max-height: 400px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(5, 10, 10);
+    text-align: center;
+    position: relative;
+    left: 1%;
+}
+
+table {
+    margin:  5% auto;
+    border-collapse:collapse;
+    border:1px solid rgb(117, 72, 72); 
+}
+
+td {
+    background-color: rgb(248, 208, 156);
+    padding: 3px;
+    border:1px solid rgb(129, 85, 85);
+    width:40px;
+    height:40px;
+    text-align: center; 
+    cursor: pointer;
+}
+
+td:hover {
+    background-color:#f11010;
+}
+
+.hide {
+    display: none;
+}
+
+.smiley {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  left: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  animation-name: smiley-a;
+  animation-duration: 10s;
+}
+
+.game-instructions {
+    position: relative;
+    top: 20px;
+    margin: auto;
+    width: 500px;
+    border: 1px solid orange;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.show-hide-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.game-instructions .instructions-list {
+   text-align: left;
+   margin-left: 20%;
+}
