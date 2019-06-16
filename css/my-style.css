@@ -76,7 +76,7 @@ td {
 }
 
 td:hover {
-    background-color:#f11010;
+    background-color:rgb(182, 180, 93, 0.1);
 }
 
 .hide {
